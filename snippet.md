@@ -14,6 +14,6 @@ var url_mac = "https://download.teamviewer.com/download/TeamViewerQS.dmg";
 var url_window = "https://download.teamviewer.com/download/TeamViewerQS.exe"
 
 if (is_OSX) document.getElementById("tm_link").href = url_mac;
-if (is_IOS) document.getElementById("tm_link").href = url_ios;
+if (is_iOS) document.getElementById("tm_link").href = url_ios;
 if (is_ANDROID) document.getElementById("tm_link").href = url_android;
 if (is_WIN) document.getElementById("tm_link").href = url_window;
