@@ -5,20 +5,19 @@
 </div>
     
 <script>
-var url_android = "https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market";
-var url_ios = "https://itunes.apple.com/us/app/teamviewer-quicksupport/id661649585";
+var url_android = "https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market"; <!-- to be removed maybe !-->
+var url_ios = "https://itunes.apple.com/us/app/teamviewer-quicksupport/id661649585"; <!-- to be removed maybe !-->
 var url_mac = "https://download.teamviewer.com/download/TeamViewerQS.dmg";
 var url_window = "https://download.teamviewer.com/download/TeamViewerQS.exe";
-var url_default = "https://download.teamviewer.com/download/TeamViewerQS.exe";
 
 
 if (navigator.userAgent.indexOf('Mac') != -1) {
   document.getElementById("tm_link").href = url_mac;
 } else if (navigator.userAgent.indexOf('Windows') != -1) {
   document.getElementById("tm_link").href = url_window;
-} else if (navigator.userAgent.indexOf('Android') != -1) {
+} else if (navigator.userAgent.indexOf('Android') != -1) { // to be removed
   document.getElementById("tm_link").href = url_android;
-} else if (navigator.userAgent.indexOf('IOS') != -1) {
+} else if (navigator.userAgent.indexOf('IOS') != -1) { // to be removed
   document.getElementById("tm_link").href = url_ios;
 }
 
